@@ -1,0 +1,35 @@
+{
+    "name": "postgres-typeorm-template",
+    "version": "0.0.1",
+    "description": "clean template for postgres typeorm typescrypt nodejs projects",
+    "scripts": {
+        "start": "node build/index.js",
+        "build": "rimraf build && tsc",
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+        "test": "ts-mocha -p tsconfig.json src/**/*.test.ts",
+        "syncdb": "ts-node src/syncdb.ts"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "pg": "^8.8.0",
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "^0.3.10"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.2",
+        "rimraf": "^3.0.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.8.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hitachi567/postgres-typeorm-template.git"
+    },
+    "keywords": [
+        "postgres",
+        "typeorm",
+        "typescript"
+    ],
+    "author": "Cyrill <vpopi4@ya.ru> (https://t.me/unkind_duck)",
+    "license": "MIT"
+}
